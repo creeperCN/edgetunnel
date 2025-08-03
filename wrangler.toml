@@ -7,11 +7,11 @@ keep_vars = true
 [observability.logs]
 enabled = true
 
-export default {
-  async fetch(request, env, ctx) {
-    await env.KV.put('KEY', 'VALUE');
-  },
-}
+kv-namespaces = [
+{ binding = "KV", id = "bb86ceb70066453d9335bdb62492a378" }
+]
+
+
 
 
 
